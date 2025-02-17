@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riconoscimento Emozioni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RICONOSCIMENTO EMOZIONI</h1>
+        <label for="image-upload" class="custom-file-upload">Carica Immagine</label>
+        <input type="file" id="image-upload" accept="image/*">
+        
+        <textarea id="explanation-input" placeholder="Inserisci spiegazione..." rows="4"></textarea>
+        
+        <button id="save-explanation-btn" class="action-btn">Salva Spiegazione</button>
+
+        <div id="saved-explanation" class="hidden">
+            <h2>Spiegazione Salvata:</h2>
+            <p id="explanation-text">Nessuna spiegazione salvata.</p>
+            <button id="back-btn" class="action-btn">Indietro</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
